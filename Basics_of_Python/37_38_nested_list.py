@@ -18,7 +18,7 @@ print(list2[4][0])
 print(list2[4][:])
 print(list2[4][1:])
 print(list2[4][:2])
-print(list2[4][::2])
+print(type(list2[4][::2]) == list)
 
 #matrix assignment
 matrix = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]

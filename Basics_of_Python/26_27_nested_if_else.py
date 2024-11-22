@@ -1,5 +1,5 @@
-weight = int(input("Enter the weight in kg: "))
-height = float(input("Enter the height in m: "))
+weight = int(input("Enter the weight in kg: ")) #94
+height = float(input("Enter the height in m: ")) #1.83
 calculated_BMI = weight / (height ** 2)
 print(f"Calculated BMI for the person in weight {weight} and in height {height} is {calculated_BMI}")
 

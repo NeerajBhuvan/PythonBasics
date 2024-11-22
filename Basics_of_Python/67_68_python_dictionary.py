@@ -20,7 +20,7 @@ print(phone_no)
 print(type(phone_no))
 
 # copy dictionary
-phone_no2 = phone_no.copy() #it will create a new reference and store it
+phone_no2 = phone_no.copy()  # it will create a new reference and store it
 print(id(phone_no2))
 print(id(phone_no))
 
@@ -44,7 +44,7 @@ print(phone_no['Neeraj']['Home'])
 
 # get method
 print(phone_no.get('Anu'))
-print(phone_no.get('anu')) #None
+print(phone_no.get('anu'))  # None
 
 # access only keys in dictionary
 print(phone_no.keys())
@@ -56,16 +56,18 @@ print(phone_no.values())
 print(phone_no.items())
 
 # access keys/values/items in loop
+print("...Keys and Values")
 for i in phone_no:
-    print(i) #keys
-    print(phone_no[i]) #values
+    print(i)  # keys
+    print(phone_no[i])  # values
 
+print("...items")
 for i in phone_no.items():
-    print(i) #items
+    print(i)  # items
 
-for key,value in phone_no.items():
-    print(key) #keys
-    print(value) #values
+print("...Both keys and items")
+for key, value in phone_no.items():
+    print(key, value)  # keys
 
 # 5) To delete items in dictionary
 # del
@@ -74,10 +76,10 @@ print(phone_no)
 
 # pop()
 print(phone_no.pop('Anu'))
-print(phone_no['Neeraj'].pop('Work')) #Nested pop
+print(phone_no['Neeraj'].pop('Work'))  # Nested pop
 print(phone_no)
 
-#popitem() - remove last item in a dictionary
+# popitem() - remove last item in a dictionary
 print(phone_no.popitem())
 print(phone_no)
 
@@ -98,7 +100,7 @@ print(student_marks)
 student_grades = {}
 for student in student_marks:
     mark = student_marks[student]
-    if mark >= 90: 
+    if mark >= 90:
         student_grades[student] = 'A+'
     elif mark > 80:
         student_grades[student] = 'A'
@@ -113,3 +115,12 @@ for student in student_marks:
     else:
         student_grades[student] = 'F'
 print(student_grades)
+
+string2 = " python programming python programming "
+print(len(string2))
+print(string2.count("mm", 0, len(string2)))
+print(string2.title())
+
+string2_splice = string2.replace(" ", "")
+list_string2 = ''.join(list(string2_splice))
+print(string2_splice.strip())

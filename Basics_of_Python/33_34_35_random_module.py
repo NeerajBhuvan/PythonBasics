@@ -7,7 +7,7 @@ b = random.randrange(1, 5)  # 5 won't print
 print(b)
 
 c = random.random()
-print(c)
+print(round(c, 2))
 
 d = random.uniform(1, 3)
 print(d)

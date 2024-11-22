@@ -7,3 +7,4 @@ print(68 << 2) #LeftShift
 print(12 << 3)
 print(56 >> 3) #RightShift
 print(12 >> 3)
+print(7 >> 2)

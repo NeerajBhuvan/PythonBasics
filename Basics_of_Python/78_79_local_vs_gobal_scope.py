@@ -23,3 +23,10 @@ def display_name():
 print(name)
 display_name()
 print(name)
+
+
+def display_d():
+    global d
+    d = 5 + 1
+display_d()
+print(d)

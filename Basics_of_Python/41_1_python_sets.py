@@ -19,8 +19,11 @@ print(set3)
 print(type(set3))
 
 #update
+print("...Update")
 set3 = {1, 10, 22, "Neeraj"} #updation of complete set is possible, we can't modify items in set
 # set3[1] = 11 #TypeError: 'set' object does not support item assignment
+set3.update((19,))
+print(set3)
 
 #add()
 set3.add(28)
@@ -29,18 +32,19 @@ set3.add((12,44,5)) # allow tuple to update because it is immutable
 print(set3)
 
 #remove
-set3.remove("Neeraj")
+print("...remove")
+set3.remove("Neeraj") #print null
 # set3.remove(13) #if we try to remove a item, which is not in set (Error: KeyError: 13)
 print(set3)
 
 #discard
-set3.discard(22)
+set3.discard(22) #print null
 set3.discard(13) #if we try to discard a item, which is not in set it won't throw any error
 set3.discard((12,44,5))
 print(set3)
 
 #pop()
-set3.pop() #remove any one random element in a list
+print(set3.pop()) #remove any one random element in a list
 print(set3)
 
 #clear

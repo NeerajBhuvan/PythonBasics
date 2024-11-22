@@ -165,6 +165,55 @@ del superSet2  # remove the complete variable itself
 
 
 # ReCall
+recall_set1 = {'Neeraj', 'Anu', 'Varsha'}
+recall_set2 = {'Meera', 'Dhanum', 'Anu', 'Hello'}
+recall_set3 = {'Neeraj', 'Varsha', 'Atsara', 'Vishnu', 'Anu'}
+
+#union
+print("...Recall_Union")
+print(recall_set1.union(recall_set2, recall_set3))
+print(recall_set1 | recall_set2 | recall_set3)
+
+#intersection
+print("...Recall_Intersection")
+print(recall_set1.intersection(recall_set2, recall_set3))
+print(recall_set1 & recall_set2 & recall_set3)
+
+#difference
+print("...Recall_Difference")
+print(recall_set1.difference(recall_set2, recall_set3))
+print(recall_set1 - recall_set2 - recall_set3)
+
+#symmetric_difference
+print("...Recall_Symmetric_Difference")
+print(recall_set1.symmetric_difference(recall_set2))
+print(recall_set1 ^ recall_set2 ^ recall_set3)
+
+#disjoint set
+print("...Recall_Disjoint") #all values are different
+print(recall_set1.isdisjoint(('Meeraj', 'Sakthi')))
+
+#subset
+print("...Recall_Subset") #all values are different
+print(recall_set1.issubset(recall_set3))
+
+#Superset
+print("...Recall_Subset") #all values are different
+print(recall_set3.issuperset({'Neeraj', 'Anu', 'Varsha'}))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 set1 = {'Neeraj', 'Anu', 'Varsha'}
 set2 = {'Meera', 'Dhanum', 'Anu'}
 

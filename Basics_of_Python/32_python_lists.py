@@ -57,7 +57,7 @@ print(numbers)
 numbers[3:7] = 0, 20, 0  # modify/replace multiple elements based on index value
 print(numbers)
 
-# remove
+# remove (remove element based on element not index)
 print("\nRemove...!")
 numbers.remove(0)  # remove the given item value and multiple instance are there it will remove only the first instance right to left
 print(numbers)
@@ -74,6 +74,7 @@ numbers.clear()
 print(numbers)
 
 arr = [1, 5, 10, 12, 25]
+print(arr[1:3])
 arr[2] = 15
 arr[2:4] = [10, 15, 20]
 arr.pop(0)
